@@ -314,3 +314,4 @@ Tests       57 passed (57)
 - ✅ Los 57 tests pasan exitosamente (`vitest run`)
 - ✅ El servidor Express arranca correctamente
 - ✅ La base de datos SQLite se crea automáticamente
+
