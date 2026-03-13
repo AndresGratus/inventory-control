@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "inverse-on-surface": "#e9f1ff",
+                "surface-tint": "#545e76",
+                "on-tertiary-fixed-variant": "#6e3900",
+                "surface-container": "#e5efff",
+                "secondary-fixed-dim": "#afc9ea",
+                "outline": "#75777d",
+                "on-primary": "#ffffff",
+                "surface-variant": "#d1e4ff",
+                "inverse-surface": "#1b324a",
+                "surface-dim": "#c5dcfb",
+                "primary-fixed": "#d7e2ff",
+                "on-background": "#031d34",
+                "on-secondary-fixed-variant": "#2f4865",
+                "surface-bright": "#f8f9ff",
+                "tertiary-fixed": "#ffdcc3",
+                "on-surface-variant": "#45474d",
+                "tertiary-container": "#3e1e00",
+                "primary-container": "#1b263b",
+                "tertiary-fixed-dim": "#ffb77d",
+                "background": "#f8f9ff",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#dbe9ff",
+                "surface": "#f8f9ff",
+                "on-secondary-container": "#48617e",
+                "on-error": "#ffffff",
+                "primary": "#051125",
+                "secondary-container": "#c2dcff",
+                "surface-container-highest": "#d1e4ff",
+                "on-primary-fixed-variant": "#3c475d",
+                "on-secondary": "#ffffff",
+                "on-surface": "#031d34",
+                "on-primary-fixed": "#101b30",
+                "tertiary": "#200c00",
+                "secondary": "#47607e",
+                "on-tertiary-container": "#d57400",
+                "on-secondary-fixed": "#001d36",
+                "error": "#ba1a1a",
+                "error-container": "#ffdad6",
+                "inverse-primary": "#bbc6e2",
+                "secondary-fixed": "#d1e4ff",
+                "outline-variant": "#c5c6cd",
+                "on-tertiary": "#ffffff",
+                "surface-container-low": "#eef4ff",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#bbc6e2",
+                "on-primary-container": "#828da7",
+                "on-tertiary-fixed": "#2f1500"
+              },
+              fontFamily: {
+                "headline": ["Work Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9ff;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
+        }
+        .glass-nav {
+            background: rgba(84, 94, 118, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface pb-24">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-surface-container-low px-6 py-4 flex items-center justify-between border-b border-outline-variant/20">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</button>
+<h1 class="font-headline text-xl font-bold text-on-surface">Dashboard</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined text-on-surface">notifications</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-10">
+<!-- Breadcrumb / Context Kicker -->
+<div class="mb-2">
+<span class="font-label text-xs font-bold tracking-[0.05em] text-on-tertiary-container bg-tertiary-fixed px-2 py-1">ZONE B &gt; REPLENISHMENT</span>
+</div>
+<!-- Product Hero Header -->
+<section class="flex flex-col md:flex-row gap-8 items-start mb-12">
+<div class="flex-1">
+<h2 class="font-headline text-4xl lg:text-5xl font-bold tracking-tight text-primary mb-2">High-Torque Industrial Drill</h2>
+<div class="flex items-center gap-4">
+<span class="font-label text-sm text-on-surface-variant bg-surface-container-highest px-3 py-1 font-semibold">SKU: IND-DRL-0092-B</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label text-sm text-on-surface-variant">Last Verified: 14 Oct 2023</span>
+</div>
+</div>
+<!-- Calculated Current Stock Monolith -->
+<div class="w-full md:w-auto kinetic-gradient p-8 text-on-primary shadow-xl flex flex-col items-start min-w-[280px]">
+<span class="font-label text-[10px] uppercase tracking-[0.1em] text-primary-fixed-dim mb-4">Calculated Current Stock</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-6xl font-bold">1,284</span>
+<span class="font-body text-lg text-primary-fixed-dim">units</span>
+</div>
+<div class="mt-6 w-full">
+<div class="h-2 bg-outline-variant/10 w-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim w-3/4"></div>
+</div>
+<div class="flex justify-between mt-2">
+<span class="font-label text-[10px] text-primary-fixed-dim">CAPACITY: 2,000</span>
+<span class="font-label text-[10px] text-primary-fixed-dim">64% FULL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout for Details & History -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Left Column: Details & Insights (4 cols) -->
+<div class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-lowest p-6">
+<h3 class="font-headline text-lg font-bold text-primary mb-6">Technical Metadata</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Storage Bin</span>
+<span class="font-body text-sm font-semibold">B-12-04-A</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Weight/Unit</span>
+<span class="font-body text-sm font-semibold">2.4 kg</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Min Threshold</span>
+<span class="font-body text-sm font-semibold">400 units</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-2">
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Lead Time</span>
+<span class="font-body text-sm font-semibold">12 Days</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-6">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">Stock Velocity</h3>
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl">trending_up</span>
+<div>
+<p class="font-body text-sm text-on-surface-variant">Average daily exit rate is up 12% from last cycle.</p>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-on-primary font-label text-xs uppercase tracking-widest font-bold">Request Audit</button>
+</div>
+</div>
+<!-- Right Column: Immutable Movement History (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10">
+<h3 class="font-headline text-2xl font-bold text-primary">Immutable Movement History</h3>
+<div class="flex gap-2">
+<button class="px-4 py-2 bg-surface-container-highest font-label text-xs font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">filter_list</span> FILTER
+                        </button>
+<button class="px-4 py-2 bg-surface-container-highest font-label text-xs font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span> EXPORT CSV
+                        </button>
+</div>
+</div>
+<!-- Timeline Container -->
+<div class="relative space-y-0">
+<!-- Vertical Line (Tonal Layering) -->
+<div class="absolute left-[19px] top-2 bottom-2 w-px bg-outline-variant/30"></div>
+<!-- Movement Entry 1: Exit -->
+<div class="relative pl-12 pb-10">
+<div class="absolute left-0 top-1 w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-error text-xl">remove_circle_outline</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-2">
+<div>
+<h4 class="font-body font-bold text-on-surface">Outbound Shipment: SO-9942</h4>
+<p class="font-label text-xs text-on-surface-variant">Executed by: M. Thompson (ID: 4402)</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-lg font-bold text-error">- 140</span>
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Oct 24, 2023 • 14:22</p>
+</div>
+</div>
+</div>
+<!-- Movement Entry 2: Adjustment -->
+<div class="relative pl-12 pb-10">
+<div class="absolute left-0 top-1 w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center border border-tertiary-fixed/20">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-xl">build_circle</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-2">
+<div class="flex-1">
+<h4 class="font-body font-bold text-on-surface">Manual Adjustment: Cycle Count</h4>
+<div class="mt-2 p-3 bg-surface-container-low border-l-4 border-tertiary-fixed-dim">
+<p class="font-body text-xs italic text-on-tertiary-container">"Physical count revealed 12 units missing from damaged crate #9. Discarded per safety protocol."</p>
+</div>
+<p class="font-label text-xs text-on-surface-variant mt-2">Verified by: Supervisor J. Chen</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-lg font-bold text-on-tertiary-container">- 12</span>
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Oct 22, 2023 • 09:15</p>
+</div>
+</div>
+</div>
+<!-- Movement Entry 3: Entry -->
+<div class="relative pl-12 pb-10">
+<div class="absolute left-0 top-1 w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-xl">add_circle_outline</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-2">
+<div>
+<h4 class="font-body font-bold text-on-surface">Inventory Replenishment: PO-8821</h4>
+<p class="font-label text-xs text-on-surface-variant">Vendor: HeavyLift Manufacturing Co.</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-lg font-bold text-primary">+ 500</span>
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Oct 18, 2023 • 11:45</p>
+</div>
+</div>
+</div>
+<!-- Movement Entry 4: Exit -->
+<div class="relative pl-12">
+<div class="absolute left-0 top-1 w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-error text-xl">remove_circle_outline</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-2">
+<div>
+<h4 class="font-body font-bold text-on-surface">Internal Requisition: Repair Team B</h4>
+<p class="font-label text-xs text-on-surface-variant">Requisition Ref: REQ-102</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-lg font-bold text-error">- 4</span>
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Oct 15, 2023 • 16:30</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="text-primary font-label text-xs font-bold uppercase tracking-widest border-b-2 border-primary pb-1">Load Older Transactions</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 right-0 glass-nav h-20 px-6 flex items-center justify-around z-50">
+<div class="flex flex-col items-center gap-1 group">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label text-[10px] text-primary font-bold">Dashboard</span>
+</div>
+<div class="flex flex-col items-center gap-1 group opacity-60">
+<span class="material-symbols-outlined text-primary">inventory_2</span>
+<span class="font-label text-[10px] text-primary">Inventory</span>
+</div>
+<div class="flex flex-col items-center -mt-10">
+<div class="w-14 h-14 kinetic-gradient rounded-full flex items-center justify-center shadow-lg border-4 border-background">
+<span class="material-symbols-outlined text-white text-2xl">qr_code_scanner</span>
+</div>
+<span class="font-label text-[10px] text-primary mt-2">Scan</span>
+</div>
+<div class="flex flex-col items-center gap-1 group opacity-60">
+<span class="material-symbols-outlined text-primary">history</span>
+<span class="font-label text-[10px] text-primary">History</span>
+</div>
+<div class="flex flex-col items-center gap-1 group opacity-60">
+<span class="material-symbols-outlined text-primary">person</span>
+<span class="font-label text-[10px] text-primary">Profile</span>
+</div>
+</nav>
+</body></html>

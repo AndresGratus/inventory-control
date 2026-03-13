@@ -1,0 +1,30 @@
+{
+  "name": "inventory-control-backend",
+  "version": "1.0.0",
+  "description": "Sistema de Control de Inventario - Backend API REST con Clean Architecture",
+  "main": "dist/infrastructure/http/server.js",
+  "scripts": {
+    "dev": "tsx watch src/infrastructure/http/server.ts",
+    "build": "tsc",
+    "start": "node dist/infrastructure/http/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
